@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body{
+  background-color:#00509d;
+  
+}
+
+.container{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 20px 20px;
+ margin:30px;
+ margin-top: 50px;
+}
+
+.card{
+  max-width:300px;
+  flex: 1 1 300px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px;
+  transition: all 0.3s ease;
+  border:#fdc500 5px solid;
+  transition: transform 0.3s ease;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.card-header{
+padding:15px;
+display:flex;
+justify-content: space-between;
+border-bottom: 1px solid #e0e0e0;
+
+}
+
+.profile{
+  display:flex;
+  align-items: center;
+}
+
+.profile-pic{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: #fdc500 5px solid;
+}
+ 
+.profile-info{
+  font-size: 16px bold;
+}
+
+.menu-icon{
+color:black;
+cursor: pointer;
+}
+
+.social-pic {
+  max-width:100%;
+  height: auto;
+}
+
+.card-footer {
+  padding: 15px;
+}
+
+.social-actions i {
+  margin-right: 10px;
+  color: #666;
+  cursor: pointer;
+}
+
+.description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+
+@media screen and (max-width: 768px) {
+  .container{
+   gap: 5px;
+   margin:0;
+  
+  }
+  .card {
+      width:280px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container{
+   justify-content: center;
+   gap: 5px;
+   margin:0;
+   
+  }
+   .card {
+     width:280px;
+   }
+ }
+
+@media screen and (max-width: 375px) {
+  .card {
+    justify-content: center;
+    width:250px;
+  }
+  .description {
+    font-size: 10px;
+  }
+}
